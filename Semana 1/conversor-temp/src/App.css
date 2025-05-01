@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h3 {
+  color: rgb(19, 148, 199);
+}
+
+ul {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+ul li {
+  list-style: none;
+  padding: 0.3rem 0;
+}
