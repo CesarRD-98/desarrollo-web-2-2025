@@ -1,4 +1,3 @@
-import Image from "next/image";
 import AuthProvider from "../provider/authProvider";
 import UserProfile from '../components/userProfile';
 
