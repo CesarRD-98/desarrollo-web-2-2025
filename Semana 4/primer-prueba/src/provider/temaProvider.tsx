@@ -4,9 +4,11 @@ import { Tema } from '@/models/tema'
 import React, { ReactNode, useContext, useState } from 'react'
 
 
-export default function temaProvider({ children }: { children: ReactNode }) {
+export default function TemaProvider({ children }: { children: ReactNode }) {
 
-    const [temas, setTemas] = useState<Tema[]>([
+    const [temas, setTemas] = useState<Tema[]>([])
+
+    const temasActuales: Tema[] = [
         { id: 1, titulo: "La historia de la inteligencia artificial", interesante: false },
         { id: 2, titulo: "Cambio climático y sus efectos globales", interesante: false },
         { id: 3, titulo: "Descubrimientos astronómicos recientes", interesante: false },
@@ -27,17 +29,17 @@ export default function temaProvider({ children }: { children: ReactNode }) {
         { id: 18, titulo: "La vida de los filósofos griegos", interesante: false },
         { id: 19, titulo: "Ciberseguridad y protección de datos", interesante: false },
         { id: 20, titulo: "Impacto de la inteligencia emocional", interesante: false }
-    ])
+    ]
 
 
-    function opcionInteresante(id: number) {
-        setTemas(temas)
+    function opcionInteresante() {
+        setTemas(temasActuales)
     }
 
     return (
-        <TemaContext value={{temas, opcionInteresante}}>
+        <TemaContext.Provider value={{ temas, opcionInteresante }}>
             {children}
-        </TemaContext>
+        </TemaContext.Provider>
     )
 }
 
