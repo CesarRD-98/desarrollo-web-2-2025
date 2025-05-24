@@ -12,7 +12,7 @@ export default function page() {
     const[fecha, setFecha] = useState<string>('')
 
     function manejarGasto() {
-
+        
     }
 
     return (
