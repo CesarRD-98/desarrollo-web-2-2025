@@ -13,7 +13,7 @@ import { ColorRandom } from '@/app/utils/colorRandom.util'
 ChartJS.register(ArcElement, Tooltip, Legend)
 
 export default function page() {
-
+    // codigo hecho por CesarRD el 23/06/2025 
     const [datos, setDatos] = useState([])
     // codigo hecho por CesarRD el 23/06/2025
     useEffect(() => {
@@ -35,8 +35,8 @@ export default function page() {
             }
         ]
     }
+    // codigo hecho por CesarRD el 23/06/2025
     return (
-        // codigo hecho por CesarRD el 23/06/2025
         <div className="container p-5 d-flex flex-column align-items-center">
             <h1 className="text-center">Examen de Desarrollo de Aplicaciones Web 2</h1>
             <h4>Cantidad de productos por marca</h4>

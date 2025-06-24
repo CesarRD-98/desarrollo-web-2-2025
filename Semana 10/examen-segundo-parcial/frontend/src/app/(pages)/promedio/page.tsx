@@ -16,7 +16,7 @@ ChartJS.register(LineElement, PointElement, CategoryScale, LinearScale, Tooltip,
 // codigo hecho por CesarRD el 23/06/2025
 export default function Home() {
     const [datos, setDatos] = useState([])
-
+    // codigo hecho por CesarRD el 23/06/2025
     useEffect(() => {
         const load = async () => {
             const DATA = await promedioPorCategoria()
@@ -31,11 +31,11 @@ export default function Home() {
             {
                 label: 'Promedio de productos',
                 data: datos.map((c: any) => c.valor_promedio),
-                backgroundColor: 'rgba(79, 75, 192, 0.2)',
-                borderColor: 'rgb(75, 91, 192)',
+                backgroundColor: '#4f4bc0',
+                borderColor: '#4b5bc0',
                 tension: 0.3,
                 fill: true,
-                pointBackgroundColor: 'rgb(171, 75, 192)'
+                pointBackgroundColor: '#ab4bc0'
             }
         ]
     }

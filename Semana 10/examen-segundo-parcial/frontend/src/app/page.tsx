@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link";
-
+// codigo hecho por CesarRD el 23/06/2025
 export default function Home() {
   // codigo hecho por CesarRD el 23/06/2025
   return (
